@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitnest - Register</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">FIT<span>NEST.</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="media.html">Media & Info</a>
+      <a href="register.html">Register</a>
+    </nav>
+    <a href="register.html" class="nav-button">JOIN NOW</a>
+  </header>
+
+  <main>
+    <form action="#" method="post" enctype="multipart/form-data">
+      <h2>Member Registration Form</h2>
+
+      <label for="fullname">Full Name *</label>
+      <input type="text" id="fullname" name="fullname" required minlength="3" maxlength="30" placeholder="e.g. Ayesha Khan">
+
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" value="fitnest_member" readonly>
+
+      <label for="promo">Promo Code</label>
+      <input type="text" id="promo" name="promo" value="FIT2026" disabled>
+
+      <label for="pass">Password *</label>
+      <input type="password" id="pass" name="password" required minlength="6">
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required placeholder="you@email.com">
+
+      <label for="dob">Date of Birth *</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="website">Your Website / Instagram URL</label>
+      <input type="url" id="website" name="website" placeholder="https://...">
+
+      <label for="favcolor">Favourite T-Shirt Color</label>
+      <input type="color" id="favcolor" name="favcolor" value="#e63946">
+
+      <label for="age">Age *</label>
+      <input type="number" id="age" name="age" required min="12" max="80">
+
+      <label for="time">Preferred Training Time</label>
+      <input type="time" id="time" name="time">
+
+      <label for="level">Fitness Level (1-10)</label>
+      <input type="range" id="level" name="level" min="1" max="10" value="5">
+
+      <label for="goal">Your Goal</label>
+      <textarea id="goal" name="goal" rows="4" placeholder="Weight loss, muscle gain..."></textarea>
+
+      <label for="plan">Choose Plan *</label>
+      <select id="plan" name="plan" required>
+        <option value="">-- Select Plan --</option>
+        <option value="basic">Basic - Rs. 5,000</option>
+        <option value="standard" selected>Standard - Rs. 8,000</option>
+        <option value="premium">Premium - Rs. 12,000</option>
+      </select>
+
+      <label for="photo">Upload Photo</label>
+      <input type="file" id="photo" name="photo">
+
+      <fieldset>
+        <legend>Gender *</legend>
+        <label><input type="radio" name="gender" value="female" required> Female</label>
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Interested In</legend>
+        <label><input type="checkbox" name="interest" value="yoga" checked> Yoga</label>
+        <label><input type="checkbox" name="interest" value="gym"> Gym</label>
+        <label><input type="checkbox" name="interest" value="boxing"> Boxing</label>
+      </fieldset>
+
+      <label><input type="checkbox" name="terms" required> I agree to gym rules *</label>
+
+      <button type="submit">Register Now</button>
+      <button type="reset">Reset</button>
+    </form>
+  </main>
+  <footer><p>© 2026 Fitnest Fitness Club</p></footer>
+</body>
+</html>

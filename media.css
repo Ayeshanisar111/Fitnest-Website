@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { font-family: Verdana, sans-serif; margin: 0; background-color: #eef2f3; }
+.navbar { display: flex; justify-content: space-between; align-items: center; background: #111; padding: 15px 40px; border-bottom: 4px solid #e63946; }
+.logo { color: white; text-decoration: none; font-size: 26px; font-weight: bold; }
+.logo span { color: #e63946; }
+.navbar nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+.nav-button { background: #e63946; color: white; padding: 10px 20px; border-radius: 20px; text-decoration: none; font-weight: bold; }
+.gallery-box { width: 90%; margin: 20px auto; padding: 20px; background: white; border: 2px solid #222; overflow: auto; }
+.float-img { float: left; width: 280px; margin: 0 20px 10px 0; border-radius: 10px; }
+.video-box { width: 90%; margin: 20px auto; background: #111; color: white; padding: 20px; }
+.lists { width: 90%; margin: 20px auto; padding: 20px; background: white; }
+.scroll-box { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #999; padding: 10px; text-align: left; }
+th { background-color: #e63946; color: white; }
+footer { text-align: center; padding: 15px; background: #222; color: white; }
